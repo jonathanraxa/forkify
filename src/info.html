@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>forkify // Search over 1,000,000 recipes</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"></header>
+
+        <div class="command_line">
+            <h1>Command Line Basics</h1>
+            <ul>
+                <li><i>ls | dir</i> - see the contents of the folder</li>
+                <li><i>cd</i> - change directory</li>
+                <li><i>clear</i> - clears the command line</li>
+                <li><i>mkdir *nameOfFolder*</i> - creates a directory</li>
+                <li><i>touch *nameoffile.html* | copy NUL *nameoffile.html*</i> - creates a file with the given name</li>
+                <li><i>cp | copy</i> - 'cp jonas.js .. ' --> copies 'jonas.js' into the parent folder</li>
+                <li><i>mv | move</i> - 'mv test.js ..' --> moves the file</li>
+                <li><i>rm | del</i> - 'rm test.js ..' --> removes the file entirely</li>
+                <li><i>rm -r | rmdir (the entire folder)</i> - 'rm -r test.js ..' --> removes the folder entirely (-r) means recursively</li>
+                <li><i>open *nameOfFile*</i> - opens the file in the default program</li>
+            </ul>
+        </div>
+
+        <div class="installingNPMandNODE">
+            <ul>
+                <li><i>install npm</i> - installs npm</li>
+                <li><i>npm init</i> - initializes the package with a package.json file</li>
+                <li><i>npm install webpack --save-dev</i> - saves package as a dependency for the project</li>
+                WEBPACK is a development tool
+                <li>npm install jquery --save</li>
+                <li><i>devDependencies (npm install *** --save-dev)</i> - modules which are only required during development</li>
+                <li><i>dependencies (npm install *** --save)</i> - modules which are also required at runtime</li>
+                <li>notes: we only need to share the package.json file which list the dependencies that we have. "NPM INSTALL" will 
+                    install all the dependencies that we need straight from the JSON file.
+                </li>
+                <li><i>npm uninstall jquery --save</i> - uninstalls the package</li>
+                <li><i>npm install live-server <b>--global</b> | <b>-g</b></i> - installs the package globally</li>
+
+            </ul>
+        </div>
+
+        <div class="configuringWebpack">
+            <div>Webpack BUNDLES all your files together. </div>
+        </div>
+
+        <div class="aModernSetup_TheWebpackDevServer">
+            <!-- /*
+            - specifies the settings for this package with node.js syntax
+            - export the configuration objects and allow webpack to work with it
+            
+            1. entry point - where webpack starts the bundling
+            2. output files
+            3.
+            4.
+            
+            notes:
+             '../' = parent
+             './' = current folder
+            
+            
+            
+            creates a built in node module called path -->
+        </div>
+
+        <div class="babel">
+            <div>BABEL - JS compiler</div>
+        </div>
+
+    </div>
+</body>
+
+<!-- 
+
+{
+    "presets": [
+        ["@babel/env", {
+            "targets": {
+                "browsers": [
+                    "last 5 versions",
+                    "ie >= 8"
+                ]
+            }
+        }]
+    ]
+}
+
+ -->
